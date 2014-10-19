@@ -3,7 +3,6 @@ import praw
 import time
 from random import randint
 from graphics import *
-
 r = praw.Reddit('owijaowijaowejgwoeijfoweijf')
 r.login('cs61a-1', 'cs61a101814')
 dangerous_citizen_review_list = []
@@ -198,7 +197,7 @@ def gui_graphics(amount_red, amount_yellow, most_wanted):
     red_box.draw(win)
     yellow_text.draw(win)
     yellow_box.draw(win)
-    time.sleep(30)
+    win.getMouse()
     win.close()
 
 def main():
